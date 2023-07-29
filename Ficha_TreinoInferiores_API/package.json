@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "mongoose": "^7.4.1",
+    "swagger-autogen": "^2.23.5",
     "swagger-ui-express": "^5.0.0"
   },
   "devDependencies": {

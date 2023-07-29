@@ -14,7 +14,7 @@ const allTreinos = async (req, res) => {
 const treinoId = async (req, res) => {
     try {
     const findTreino = await treinoModel.findById(req.params.id)
-    res.status(200).json(findlink)
+    res.status(200).json(findTreino)
     } catch (error) {
     console.log(error)
     res.status(500).json({
@@ -37,9 +37,9 @@ const addTreino = async (req, res) =>{
     }
     const updateTreino = async (req, res) =>{
         try {
-        const {usuario, ordem, exercicio, serie, repedicao} = req.body
+        const {usuario, ordem, exercicio, serie, repeticao} = req.body
         const updated = await treinoModel.findByIdAndUpdate(
-        req.params.id, {usuario, ordem, exercicio, serie, repedicao})
+        req.params.id, {usuario, ordem, exercicio, serie, repeticao})
         res.status(200).json({message: "treino atualizado e salvo", updated})
         
         } catch (error) {
