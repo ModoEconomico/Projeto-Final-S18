@@ -1,4 +1,4 @@
-const controller = require("../controller/treinoControllers");
+const controller = require ("../controller/treinoControllers");
 const express = require("express")
 
 const router = express.Router();

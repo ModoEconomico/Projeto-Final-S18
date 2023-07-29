@@ -1,4 +1,4 @@
-const app = require("./Ficha_TreinoInferiores_API/src/app");
+const app = require("./src/app");
 
 const PORT = process.env.PORT;
 
